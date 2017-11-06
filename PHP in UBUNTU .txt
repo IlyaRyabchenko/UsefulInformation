@@ -1,0 +1,17 @@
+1) Remove all the stock php packages:
+
+sudo apt-get purge `dpkg -l | grep php| awk '{print $2}' |tr "\n" " "`
+
+2) Add the PPA:
+
+sudo add-apt-repository ppa:ondrej/php
+
+3) Install your PHP Version:
+
+sudo apt-get update
+sudo apt-get install php5.6
+
+4) Verify your version
+
+sudo php -v
+
